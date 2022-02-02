@@ -1,7 +1,7 @@
 body {
     text-align: center;
     background-image:
-      url(imgs/fundo-mapa_mundi-.jpg),
+      url(fundo-mapa_mundi-.jpg),
       radial-gradient(farthest-corner at 92px 45px , #2d9ecf 10%, #09ad7c 72%);
     background-size: cover;
     background-position-x: 50%;
