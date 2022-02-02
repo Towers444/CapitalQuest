@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+    background-image:
+      url(imgs/fundo-mapa_mundi-.jpg),
+      radial-gradient(farthest-corner at 92px 45px , #2d9ecf 10%, #09ad7c 72%);
+    background-size: cover;
+    background-position-x: 50%;
+    background-attachment: fixed;
+    background-blend-mode: hard-light;
+  }
+
+button {
+  margin-right: 20px;
+  margin-left: auto;
+}
+
+.center-button {
+  display: flex;
+  justify-content: center;
+}
+
+header{
+  padding-top: 1em;
+  text-align: center;
+  background-color: #79d0f5;
+  margin-top: -20px;
+  margin-left: -8px;
+  margin-right: -8px;
+  font-size: 20px;
+}

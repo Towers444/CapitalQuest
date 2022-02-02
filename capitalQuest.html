@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Capital Quest</title>
+    <link rel="stylesheet" href="capitalQuest.css">
+    <link rel="shortcut icon" href="imgs/favicon-capital_quest-globo_terrestre_desenho-.ico">
+    <!--Fonte Noto Serif-->
+    <!--Fonte Open Sans Condensed-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <main>
+      <section>
+        <div id="rounds">
+          <h2> Pontuação: <span id="score"> 0 </span> </h2>
+        </div>
+        <div id="jogador">
+          <h2> <span class="nomeJogador"> Nome Jogador </span> </h2>
+        </div>
+        <div id="vidas">
+          <h2> Lifes </h2>
+          <img src="imgs/icone_coracao_vidas.png" id="coracao1" class="coracoes_vidas" alt="Coração de Vida">
+          <img src="imgs/icone_coracao_vidas.png" id="coracao2" class="coracoes_vidas" alt="Coração de Vida">
+          <img src="imgs/icone_coracao_vidas.png" id="coracao3" class="coracoes_vidas" alt="Coração de Vida">
+        </div>
+        <div id="conteudo">
+          <!--Texto Principal-->
+          <h1> Qual é a Capital? </h1>
+          <!--Bandeira do país-->
+          <img src="imgs/bandeira_brasil.png" id="imagemBandeira" alt="Bandeira pais"> 
+          <!--Alternativa de capitais-->
+          <button id="opcaoA" class="opcoes" > São Paulo </button>
+          <button id="opcaoB" class="opcoes"> Brasília </button>
+          <button id="opcaoC" class="opcoes"> Minas Gerais </button>
+          <button id="opcaoD" class="opcoes"> Santa Catarina </button>
+        </div>
+      </section>
+      <button id="botaoModal">
+        <img src="imgs/icone_modal_OFC.png" id="imagemModal">
+      </button>
+      <div class="modal">
+        <header id="cabecalhoModal">
+          <h1>Capital Quest</h1>
+          <span class="fechar-modal"> × </span>
+        </header>
+        <div class="corpo_modal">
+          <p>
+            O Capital Quest é um jogo de perguntas e respostas em que durante a sua dinâmica envolve conhecimentos geográficos,
+            a fim do jogador responder dentre várias opções, qual é a capital do país representado na imagem. Possuindo este somente
+            três vidas que o separa da pontuação máxima. Sendo necessário rápida associação entre aquilo que se sabe e o que é mostrado
+            a fim de gabaritar as perguntas.  
+          </p>
+          <p>
+            Em que além de ser um jogo dinâmico, divertido e repleto  de imagens, ainda se torna educativo tendo em vista que se aprende
+            cada vez mais enquanto se joga.   
+          </p>
+          <h3>Responsável</h3>
+          <ul>
+            <li>João Pedro Torres-Informática-1°ano- </li>
+          </ul>
+        </div>
+        <footer id="rodapeModal">
+          <button id="botaoFecharModal" class="fechar-modal"> OK </button>
+        </footer>
+      </div>
+      <div id="mascara"></div>
+    </main>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="capitalQuest.js" charset="utf-8"></script>
+  </body>
+</html>

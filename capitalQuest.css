@@ -1,0 +1,260 @@
+
+
+body {
+  text-align: center;
+  background-image:
+    url(imgs/fundo-mapa_mundi-.jpg),
+    radial-gradient(farthest-corner at 92px 45px , #2d9ecf 10%, #09ad7c 72%);
+  background-size: cover;
+  background-position-x: 50%;
+  background-attachment: fixed;
+  background-blend-mode: hard-light;
+}
+
+h1 {
+
+  font-family: 'Noto Serif', serif;
+  display: inline-block;
+  
+}
+
+h2 {
+
+  display: inline-block;
+  
+}
+
+#cabecalhoInicial{
+  padding-bottom: 1em;
+  padding-right: 1em;
+  padding-left: 1em;
+  text-align: center;
+  background-image:
+    radial-gradient(farthest-corner at 92px 45px , #2d9ecf 10%, #09ad7c 72%);
+  margin-top: 17%;
+  margin-left: -8px;
+  margin-right: -8px;
+  font-size: 20px;
+  position: static;
+}
+
+#cabecalhoInicial img{
+  width: 100px;
+  height: 110px;
+  display: inline-block;
+  position: relative;
+  top: 35px;
+}
+
+#jogar{
+  font-size: 20px;
+  border-color: black;
+  border-radius: 7%;
+  background-image:
+    radial-gradient(farthest-corner at 92px 45px , #2d9ecf 10%, #0979ad 72%);
+  font-family: 'font-family: 'Source Serif Pro', serif'; 
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  
+}
+
+#cadastro {
+
+  text-align: center;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-top: 10px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  border: solid 1px black;
+  background-image:
+    radial-gradient(farthest-corner at 92px 45px , #2d9ecf 10%, #09ad7c 72%);
+
+}
+
+#cadastro label{
+  font-family: 'font-family: 'Source Serif Pro', serif';
+  font-size: 20px;
+}
+
+section {
+
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  grid-template-columns: 33% 33% 33%; 
+  width: 30%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  background-color: transparent;
+  opacity: 0.8;
+  border: solid 5px black;
+  border-radius: 10%;
+
+}
+
+#rounds {
+
+  grid-column: 1/2;
+
+}
+#jogador {
+
+  grid-column: 2/3;
+
+}
+#vidas {
+
+  grid-column: 3/4;
+
+}
+
+.coracoes_vidas, #imagemPrincipal {
+
+  display: inline-block;
+
+}
+
+#conteudo {
+
+  grid-row: 2/3;
+  grid-column: 1/4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+  gap: 10px;
+
+}
+
+.opcoes {
+
+  width: 90%;
+  height: 50px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  cursor: pointer;
+  box-shadow: inset 0 -2px 1px rgba(0,0,0,0.03);
+  margin-bottom: 5px;
+
+}
+
+.coracoes_vidas.menosVida {
+
+  opacity: 0;
+
+}
+
+.modal {
+
+  position: fixed;
+  z-index: 10;
+  width: 50vw;
+  height: auto;
+  left: 25vw;
+  top: 30vh;
+  background-color: lightblue;
+  transform: translateY(-25%);
+  padding: 1rem;
+  border: 1px solid silver;
+  box-shadow: 4px 4px 8px black;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 200ms ease-out;
+
+}
+
+.modal ul {
+
+  list-style-type: none;
+
+}
+
+.modal.visivel {
+
+  opacity: 1;
+  transform: translateY(-50%);
+  pointer-events: initial;
+
+}
+
+#cabecalhoModal {
+
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black
+  
+}
+
+#corpoModal {
+
+  padding: 1em 0;
+  
+}
+
+#rodapeModal {
+
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid black;
+  padding-top: 0.75em;
+  
+}
+
+
+span.fechar-modal {
+
+  background-color: silver;
+  border-radius: 50%;
+  display: flex;
+  width: 1.25em;
+  height: 1.25em;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  
+}
+
+#botaoFecharModal {
+
+  background-color: silver;
+  width: 5%;
+  height: 3%;
+  cursor: pointer;
+
+}
+
+#botaoModal {
+
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+}
+
+#mascara {
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+
+}
+
+.modal.visivel ~ #mascara {
+
+  opacity: 0.1;
+  pointer-events: initial;
+  
+  }
